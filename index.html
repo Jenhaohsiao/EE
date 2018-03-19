@@ -1,0 +1,420 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+
+<head profile="http://gmpg.org/xfn/11">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <title>EE 表格試算 Woori專業留學</title>
+
+    <!-- CSS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/myStyle.css" rel="stylesheet">
+
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- EE form -->
+
+    <div class="container">
+        <h1 class="formh1">Woori 專業留遊學： 快速移民(Express Entry)計算表</h1>
+        <table id="eeForm">
+            <div class="form-group">
+                <tr>
+                    <td width="15%">婚姻</td>
+                    <td colspan="2">
+                        <label>
+                            <input type="radio" value="attached" name="ques01" class="checked" checked />已婚或者已有同居伴侶
+                        </label>
+
+                        <label>
+                            <input type="radio" value="single" name="ques01" class="checked" />單身
+                        </label>
+                    </td>
+                </tr>
+
+                <tr class="subtitle">
+                    <td colspan="2">A. 核心/人力資本因素 Core / human capital factors</td>
+                    <td>滿分460-500</td>
+                </tr>
+
+                <tr>
+                    <td>年齡</td>
+                    <td width="70%" class="left">
+                        <input type="text" placeholder="年齡數字" id="ques02" width="120px" />
+                    </td>
+
+                    <td width="15%">
+                        <span id="result02"></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>學歷</td>
+                    <td class="left">
+                        <label>
+                            <input type="radio" value="0" name="ques03" /> 高中以下</label>
+                        <br />
+                        <label>
+                            <input type="radio" value="1" name="ques03" /> 高中</label>
+                        <br />
+                        <label>
+                            <input type="radio" value="2" name="ques03" /> 1年大專</label>
+                        <br />
+                        <label>
+                            <input type="radio" value="3" name="ques03" /> 2年大專</label>
+                        <br />
+                        <label>
+                            <input type="radio" value="4" name="ques03" /> 3年以上大專或本科</label>
+                        <br />
+                        <label>
+                            <input type="radio" value="5" name="ques03" /> 雙專業（3年以上+1年以上）</label>
+                        <br />
+                        <label>
+                            <input type="radio" value="6" name="ques03" /> 碩士學位或專業學位（例如醫學博士）</label>
+                        <br />
+                        <label>
+                            <input type="radio" value="7" name="ques03" /> 博士學位</label>
+                    </td>
+                    <td>
+                        <span id="result03"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>第一語言</td>
+                    <td class="left">
+                        <label>
+                            <input type="radio" value="0" name="ques04" /> IELTS 雅思培訓類</label>
+                        <label>
+                            <input type="radio" value="1" name="ques04" /> CELPIP 思培</label>
+                        <label>
+                            <input type="radio" value="2" name="ques04" /> TEF 法語水平考試</label>
+                        <br />
+                        <label> 聽
+                            <input type="text" id="ques041" name="mainlangque" subid="0" targetid="result041" class="inputtext main lang" />
+                            <span id="result041" class=""></span>
+                        </label>
+                        <br />
+                        <label> 說
+                            <input type="text" id="ques042" name="mainlangque" subid="1" targetid="result042" class="inputtext main lang" />
+                            <span id="result042" class=""></span>
+                        </label>
+                        <br />
+                        <label> 讀
+                            <input type="text" id="ques043" name="mainlangque" subid="2" targetid="result043" class="inputtext main lang" />
+                            <span id="result043" class=""></span>
+                        </label>
+                        <br />
+                        <label> 寫
+                            <input type="text" id="ques044" name="mainlangque" subid="3" targetid="result044" class="inputtext main lang" />
+                            <span id="result044" class=""></span>
+                        </label>
+                    </td>
+                    <td>
+                        <span id="result04"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>第二語言</td>
+                    <td class="left">
+                        如果您第一語言選了英語考試，第二語言請選擇法語考試，反之亦然
+                        <br />
+                        <label>
+                            <input type="radio" value="3" name="ques05" class="checked" checked /> 無</label>
+                        <label>
+                            <input type="radio" value="0" name="ques05" /> IELTS 雅思培訓類</label>
+                        <label>
+                            <input type="radio" value="1" name="ques05" /> CELPIP 思培</label>
+                        <label>
+                            <input type="radio" value="2" name="ques05" /> TEF 法語水平考試</label>
+                        <br />
+                        <label> 聽
+                            <input type="text" id="ques051" name="seclangque" subid="0" targetid="result051" class="inputtext main lang" />
+                            <span id="result051" class="seclangres"></span>
+                        </label>
+                        <br />
+                        <label> 說
+                            <input type="text" id="ques052" name="seclangque" subid="1" targetid="result052" class="inputtext main lang" />
+                            <span id="result052" class="seclangres"></span>
+                        </label>
+                        <br />
+                        <label> 讀
+                            <input type="text" id="ques053" name="seclangque" subid="2" targetid="result053" class="inputtext main lang" />
+                            <span id="result053" class="seclangres"></span>
+                        </label>
+                        <br />
+                        <label> 寫
+                            <input type="text" id="ques054" name="seclangque" subid="3" targetid="result054" class="inputtext main lang" />
+                            <span id="result054" class="seclangres"></span>
+                        </label>
+                    </td>
+                    <td>
+                        <span id="result05"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>工作經驗</td>
+                    <td class="left">
+                        <label>加拿大工作經驗（總年數，可以不連續）
+                            <input type="text" placeholder="請寫總年數" id="ques061" name="ques06" width="120px" class="inputtext" />年
+                            <br />
+                        </label>
+                        <br />
+                        <label>非加拿大工作經驗（總年數，可以不連續）
+                            <input type="text" placeholder="請寫總年數" id="ques062" name="" width="120px" class="inputtext" />年</label>
+                        <br /> 非加拿大的工作經驗不能直接產生分數，但是在後續交叉項有可能算分
+                        <br /> 工作經驗必須是
+                        <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/become-candidate/eligibility/find-national-occupation-code.html"
+                            target="_blank">NOC</a>的0、A或者B类
+                    </td>
+                    <td>
+                        <span id="result06"></span>
+                    </td>
+                </tr>
+
+                <tr class="subtitle">
+                    <td colspan="2">B. 配偶因素 Spouse factors</td>
+                    <td>满分40</td>
+                </tr>
+                <tr>
+                    <td>配偶學歷</td>
+                    <td class="left">
+                        <label>
+                            <input type="radio" value="0" name="ques07" /> 高中以下</label>
+                        <br />
+                        <label>
+                            <input type="radio" value="1" name="ques07" /> 高中</label>
+                        <br />
+                        <label>
+                            <input type="radio" value="2" name="ques07" /> 1年大專</label>
+                        <br />
+                        <label>
+                            <input type="radio" value="3" name="ques07" /> 2年大專</label>
+                        <br />
+                        <label>
+                            <input type="radio" value="4" name="ques07" /> 3年以上大專或本科</label>
+                        <br />
+                        <label>
+                            <input type="radio" value="5" name="ques07" /> 雙專業（3年以上+1年以上）</label>
+                        <br />
+                        <label>
+                            <input type="radio" value="6" name="ques07" /> 碩士學位或專業學位（如醫學博士</label>
+                        <br />
+                        <label>
+                            <input type="radio" value="7" name="ques07" /> 博士學位</label>
+                    </td>
+                    <td>
+                        <span id="result07" class="spouseres"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>配偶第一語​​言</td>
+                    <td class="left">
+                        <label>
+                            <input type="radio" value="0" name="ques08" /> IELTS 雅思培訓類</label>
+                        <label>
+                            <input type="radio" value="1" name="ques08" /> CELPIP 思培</label>
+                        <label>
+                            <input type="radio" value="2" name="ques08" /> TEF 法語水平考試</label>
+                        <label>
+                            <input type="radio" value="3" name="ques08" /> 無</label>
+                        <br />
+                        <label> 聽
+                            <input type="text" id="ques081" name="spolangque" subid="0" targetid="result081" class="inputtext main lang" />
+                            <span id="result081" class="spolangres"></span>
+                        </label>
+                        <br />
+                        <label> 說
+                            <input type="text" id="ques082" name="spolangque" subid="1" targetid="result082" class="inputtext main lang" />
+                            <span id="result082" class="spolangres"></span>
+                        </label>
+                        <br />
+                        <label> 讀
+                            <input type="text" id="ques083" name="spolangque" subid="2" targetid="result083" class="inputtext main lang" />
+                            <span id="result083" class="spolangres"></span>
+                        </label>
+                        <br />
+                        <label> 寫
+                            <input type="text" id="ques084" name="spolangque" subid="3" targetid="result084" class="inputtext main lang" />
+                            <span id="result084" class="spolangres"></span>
+                        </label>
+                    </td>
+                    <td>
+                        <span id="result08" class="spouseres"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>配偶工作經驗</td>
+                    <td class="left">
+                        <label>加拿大工作經驗（總年數，可以不連續）
+                            <input type="text" placeholder="請寫總年數" id="ques091" name="ques06" width="120px" class="inputtext" />年</label>
+                        <br /> 工作經驗必須是
+                        <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/become-candidate/eligibility/find-national-occupation-code.html" target="_blank">NOC</a>的0、A或者B类
+                    </td>
+                    <td>
+                        <span id="result09" class="spouseres"></span>
+                    </td>
+                </tr>
+                <tr class="subtitle">
+                    <td colspan="2">C. 遷移能力因素（交叉項） Skill transferability factors
+                    </td>
+                    <td>满分100</td>
+                </tr>
+                <tr>
+                    <td>教育
+                        <br /> 最高50分
+                    </td>
+                    <td class="left">
+                        本欄自動計算分數
+                        <br /> 教育背景x語言能力 您的得分：
+                        <span id="result101"></span>
+                        <br /> 1年大專及以上
+                        <span class="import">同時</span>第一語言每一項都有CLB7級（含）以上，可以獲得分數
+                        <br />雙學位以上或者第一語言每一項都有CLB9級（含）以上，會有更多分數</p>
+                        <p> 教育背景x加拿大工作經驗 您的得分：
+                            <span id="result102"></span>
+                            <br /> 1年大專及以上
+                            <span class="import">同時</span>加拿大工作過1年，可以獲得分數
+                            <br />雙學位以上或者加拿大工作兩年以上，會有更多分數</td>
+                    <td>
+                        <span id="result10"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>海外工作經驗
+                        <br /> 最高50分
+                    </td>
+                    <td class="left">
+                        本欄自動計算分數
+                        <br /> 海外（非加拿大）工作經驗x語言能力 您的得分：
+                        <span id="result111"></span>
+                        <br /> 1年海外工作經歷
+                        <span class="import">同時</span>第一語言每一項都有CLB7級（含）以上，可以獲得分數
+                        <br />3年海外工作經歷或者第一語言每一項都有CLB9級（含）以上，會有更多分數</p>
+                        <p> 海外（非加拿大)工作經驗x加拿大工作經驗 您的得分：
+                            <span id="result112"></span>
+                            <br /> 海外（非加拿大)工作1年
+                            <span class="import">同時</span>加拿大工作1年，可以獲得分數
+                            <br />3年海外工作經歷或者加拿大工作兩年以上，會有更多分數</td>
+                    <td>
+                        <span id="result11"></span>
+                    </td>
+                </tr>
+                <tr class="subtitle">
+                    <td colspan="2">D. 附加分 Addtional points
+                    </td>
+                    <td>滿分600</td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="ques12">
+                        省提名
+                        <br />
+                        <label>
+                            <input type="checkbox" id="ques12_pnp" value="600" />我有省提名</label>
+                        <br /> 雇主擔保
+                        <br />
+                        <label>
+                            <input type="radio" name="ques12_offer" value="200">我有00類的雇主擔保</label>
+                        <br />
+                        <label>
+                            <input type="radio" name="ques12_offer" value="50">我有其他類的雇主擔保</label>
+                        <br />
+                        <label>
+                            <input type="radio" name="ques12_offer" value="0">沒有雇主擔保</label>
+                        <br /> 在加拿大學歷
+                        <br />
+                        <label>
+                            <input type="radio" name="ques12_diploma" value="30">我有學制3年以上的加拿大學歷，或者加拿大的碩士、博士學歷</label>
+                        <br />
+                        <label>
+                            <input type="radio" name="ques12_diploma" value="15">我有學制1-2年的的加拿大學歷</label>
+                        <br />
+                        <label>
+                            <input type="radio" name="ques12_diploma" value="0">沒有上述學歷</label>
+                        <br /> 法語加分
+                        <br /> 法語達到 CLB7 以上會自動產生附加分。您的得分：
+                        <span id="ques12_fr" value="0">0分</span>
+                        <br /> 兄弟姐妹加分
+                        <br />
+                        <label>
+                            <input type="checkbox" id="ques12_sib" value="15" />申請人或配偶有加拿大兄弟姐妹</label>
+                    </td>
+                    <td>
+                        <span id="result12"></span>
+                    </td>
+                </tr>
+                <tr class="inSum">
+                    <td colspan="2">總分</td>
+                    <td>
+                        <span id="finalresult"></span>
+                    </td>
+                </tr>
+        </table>
+
+        </div>
+        <!-- class="container" end -->
+
+        <!-- EE form end -->
+
+
+    </div>
+    <!-- end wrapper-1 -->
+    <link rel='stylesheet' id='yarppRelatedCss-css' href='http://eoivisa.com/wp-content/plugins/yet-another-related-posts-plugin/style/related.css?ver=4.2'
+        type='text/css' media='all' />
+    <script type='text/javascript' src='http://eoivisa.com/wp-content/themes/u-design/scripts/prettyPhoto/js/jquery.prettyPhoto.js?ver=3.1.6'></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var pretty_photo_custom_params = {
+            "window_width_to_disable_pp": "0",
+            "pretty_photo_style_theme": "dark_rounded",
+            "disable_pretty_photo_gallery_overlay": null
+        };
+        /* ]]> */
+    </script>
+    <script type='text/javascript' src='http://eoivisa.com/wp-content/themes/u-design/scripts/prettyPhoto/custom_params.js?ver=3.1.6'></script>
+    <script type='text/javascript' src='http://eoivisa.com/wp-content/themes/u-design/scripts/superfish-menu/js/superfish.combined.js?ver=1.7.2'></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var udesign_script_vars = {
+            "search_widget_placeholder": "Type here to search",
+            "disable_smooth_scrolling_on_pages": null,
+            "remove_fixed_menu_on_mobile": null
+        };
+        /* ]]> */
+    </script>
+    <script type='text/javascript' src='http://eoivisa.com/wp-content/themes/u-design/scripts/script.js?ver=1.0'></script>
+    <script type='text/javascript' src='http://eoivisa.com/wp-content/themes/u-design/scripts/responsive/selectnav/selectnav.min.js?ver=0.1'></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var udesign_selectnav_vars = {
+            "selectnav_menu_label": "Navigation"
+        };
+        /* ]]> */
+    </script>
+    <script type='text/javascript' src='http://eoivisa.com/wp-content/themes/u-design/scripts/responsive/selectnav/selectnav-options.js?ver=0.1'></script>
+    <script type='text/javascript' src='http://eoivisa.com/wp-includes/js/comment-reply.min.js?ver=4.2'></script>
+
+    <!-- EE Form -->
+    <script type='text/javascript' src='eeForm.js'></script>
+
+    <!-- Bootstratp -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

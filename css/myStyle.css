@@ -1,0 +1,32 @@
+.formh1{
+    font-size:45;
+    color: #ff4646;
+    margin: 30px 0px；
+}
+
+#eeForm table, th, td{
+    border: 1px solid black;
+    padding: 5px;
+    
+}
+
+#eeForm{
+    width:100%;
+    border-collapse: collapse;
+    margin:20px 0px;
+}
+
+.subtitle{
+    background-color: #fff1a1;
+    color: #3c3c3c;
+}
+
+.inSum{
+    background-color: #fc6e31;
+    color: #3c3c3c;
+}
+
+.import{
+    color: #a90505;
+    font-weight: 500;
+}
